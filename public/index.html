@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Juegos y Mapas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Gestión de Juegos y Mapas</h1>
+
+  <!-- Agregar Juego -->
+  <section>
+    <h2>Agregar Juego</h2>
+    <form id="form-juego">
+      <label for="juego-titulo">Título del juego:</label>
+      <input type="text" id="juego-titulo" required>
+      <button type="submit">Agregar Juego</button>
+    </form>
+  </section>
+
+  <!-- Agregar Mapa -->
+  <section>
+    <h2>Agregar Mapa</h2>
+    <label for="select-juego-mapa">Selecciona un juego:</label>
+    <select id="select-juego-mapa">
+      <option value="">-- Selecciona un juego --</option>
+    </select>
+    <form id="form-mapa">
+      <label for="mapa-titulo">Título del mapa:</label>
+      <input type="text" id="mapa-titulo" required>
+      <button type="submit">Agregar Mapa</button>
+    </form>
+  </section>
+
+  <!-- Selección de Juego para Random -->
+  <section>
+    <h2>Seleccionar Juego para Random</h2>
+    <label for="select-juego-random">Selecciona un juego:</label>
+    <select id="select-juego-random">
+      <option value="">-- Selecciona un juego --</option>
+    </select>
+  </section>
+
+  <!-- Listado de Mapas -->
+  <section>
+    <h2>Mapas del Juego Seleccionado</h2>
+    <button id="btn-reiniciar-baneos">Reiniciar Baneos del Juego</button>
+    <ul id="lista-mapas"></ul>
+  </section>
+
+  <!-- Mapa Aleatorio -->
+  <section>
+    <h2>Mapa Aleatorio</h2>
+    <button id="btn-mapa-aleatorio">Seleccionar Aleatorio</button>
+    <div id="resultado-aleatorio"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
